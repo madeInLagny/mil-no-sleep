@@ -3,6 +3,8 @@
 mil-no-sleep mocks the Wake Lock API and extends it to all browsers.
 This webcomponent follows the [open-wc](https://github.com/open-wc/open-wc) recommendation.
 
+Demo: https://stackblitz.com/edit/mil-no-sleep-example?file=index.js
+
 ## Installation
 
 ```bash
