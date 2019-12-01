@@ -1,9 +1,21 @@
 {
   "name": "mil-no-sleep",
-  "version": "0.0.0",
-  "description": "Webcomponent mil-no-sleep following open-wc recommendations",
-  "author": "mil-no-sleep",
-  "license": "MIT",
+  "version": "1.0.0",
+  "author": "MIL Made In Lagny",
+  "keywords": [
+    "wake lock",
+    "PWA",
+    "progressive web app",
+    "Sleep mode",
+    "litElement",
+    "litHtml"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/madeInLagny/mil-no-sleep.git"
+  },
+  "homepage": "https://github.com/madeInLagny/mil-no-sleep",
+  "description": "Wake Lock Webcomponent following open-wc recommendations","license": "MIT",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
