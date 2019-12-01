@@ -14,7 +14,7 @@ export class MilNoSleep extends LitElement {
       hidden: { type: String },
       visibilityChange: { type: Number },
       isPlaying: { type: Number },
-      videoPlayer:{type: Object}
+      videoPlayer: { type: Object },
     };
   }
 
@@ -49,8 +49,8 @@ export class MilNoSleep extends LitElement {
     }
   }
 
-  firstUpdated(){
-    this.videoPlayer = this.shadowRoot.getElementById("player");
+  firstUpdated() {
+    this.videoPlayer = this.shadowRoot.getElementById('player');
   }
 
   render() {
@@ -89,11 +89,10 @@ export class MilNoSleep extends LitElement {
   }
 
   disableSleepMode() {
-
     this.videoPlayer.pause();
     this.videoPlayer.load();
     this.videoPlayer.play();
-    this.set('isPlaying', true);
+    this.isPlaying = true;
     this.dispatchEvent(
       new CustomEvent('sleepModeDisabled', {
         bubbles: true,
@@ -103,15 +102,14 @@ export class MilNoSleep extends LitElement {
   }
 
   _videoEnded() {
-
     this.videoPlayer.pause();
-    this.set('isPlaying', false);
+    this.isPlaying = false;
     this.disableSleepMode();
   }
 
   enableSleepMode() {
     this.videoPlayer.pause();
-    this.set('isPlaying', false);
+    this.isPlaying = false;
     this.dispatchEvent(
       new CustomEvent('sleepModeEnabled', {
         bubbles: true,
