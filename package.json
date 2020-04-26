@@ -15,7 +15,8 @@
     "url": "https://github.com/madeInLagny/mil-no-sleep.git"
   },
   "homepage": "https://github.com/madeInLagny/mil-no-sleep",
-  "description": "Wake Lock Webcomponent following open-wc recommendations","license": "MIT",
+  "description": "Wake Lock Webcomponent following open-wc recommendations",
+  "license": "MIT",
   "main": "index.js",
   "module": "index.js",
   "scripts": {
